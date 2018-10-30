@@ -63,7 +63,7 @@ It accepts HTTP requests of the following form:
 A request can be sent from a browser, or by using the Linux utility curl, as
 follows:
 
-curl http://localhost:8080/mail -d 'from=...&to=...&subject=...&text=...'
+    curl http://localhost:8080/mail -d 'from=...&to=...&subject=...&text=...'
 
 ## Notable Features ##
 
