@@ -19,7 +19,7 @@ Zero or more "cc"'s and "bcc"'s are allowed.
 
 ## Install ##
 
-npm install
+    npm install
 
 ## Usage ##
 
@@ -29,36 +29,36 @@ The server can be started as follows:
 
 It is configurable via the following environment variables:
 
--   EMAIL_PORT
+-   EMAIL_PORT  
     The port number the server listens to.
     Default is 8080.
 
--   EMAIL_LOG_DIR
+-   EMAIL_LOG_DIR  
     Log directory.
     All log files are created in this directory.
     Defaults to the directory where code for this server are on.
 
--   EMAIL_LOG_LEVEL
+-   EMAIL_LOG_LEVEL  
     Message logging level - "debug", "info" "warn" or "error".
     Defaults to "info".
 
--   EMAIL_MAILGUN_API_KEY
+-   EMAIL_MAILGUN_API_KEY  
     Mailgun's API key, without which the server would not start.
 
--   EMAIL_MAILGUN_DOMAIN 
+-   EMAIL_MAILGUN_DOMAIN  
     Mailgun requires at least one domain name - a mail manipulated through a
     Mailgun API must be associated with a domain name. 
     This simple server can only deal with one domain name, and it would not
     start without a domain name.
 
--   EMAIL_SENDGRID_API_KEY
+-   EMAIL_SENDGRID_API_KEY  
     Sendgrid's API key, without which the server would not start
 
 It accepts HTTP requests of the following form:
 
-POST /mail HTTP/1.x
-Host: ...
-Content-Type: application/x-www-form-urlencoded
+    POST /mail HTTP/1.x
+    Host: ...
+    Content-Type: application/x-www-form-urlencoded
 
 A request can be sent from a browser, or by using the Linux utility curl, as
 follows:
